@@ -1,0 +1,23 @@
+---
+networks:
+  - name: private
+    type: manual
+    subnets:
+    - range: 10.244.0.0/24
+      gateway: 10.244.0.1
+
+compilation:
+  cloud_properties:
+    name: random
+  network: private
+  reuse_compilation_vms: true
+  workers: 6
+
+resource_pools:
+- name: dotfiles
+  cloud_properties:
+    name: random
+  network: private
+  stemcell:
+    name: bosh-warden-boshlite-ubuntu-trusty-go_agent
+    version: latest

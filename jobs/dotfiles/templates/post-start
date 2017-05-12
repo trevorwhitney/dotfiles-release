@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -ex
+
+DOTFILES_USER=<%= p('user') %>
+RUN_DIR=/var/vcap/sys/run/dotfiles
+LOG_DIR=/var/vcap/sys/log/dotfiles
+
+mkdir -p $RUN_DIR $LOG_DIR
+chown -R $DOTFILES_USER:$DOTFILES_USER $RUN_DIR $LOG_DIR
+
+exec chpst -u $DOTFILES_USER:$DOTFILES_USER /var/vcap/src/bin/install.sh minimal

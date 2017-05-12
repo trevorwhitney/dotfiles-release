@@ -1,0 +1,40 @@
+---
+name: dotfiles
+
+stemcells:
+- alias: trusty
+  os: ubuntu-trusty
+  version: latest
+
+releases:
+- name: dotfiles
+  version: latest
+- name: os-conf
+  version: 12
+  url: https://bosh.io/d/github.com/cloudfoundry/os-conf-release?v=12
+  sha1: af5a2c9f228b9d7ec4bd051d71fef0e712fa1549
+
+instance_groups:
+- name: dotfiles
+  instances: 1
+  stemcell: trusty
+  networks:
+  - name: private
+  jobs:
+  - name: user_add
+    release: os-conf
+    properties:
+      users:
+      - name: bosh
+        public_key: ((bosh_ssh.public_key))
+  - name: dotfiles
+    release: dotfiles
+    properties:
+      user: bosh
+
+update:
+  canaries: 1
+  max_in_flight: 1
+  serial: false
+  canary_watch_time: 1000-60000
+  update_watch_time: 1000-60000

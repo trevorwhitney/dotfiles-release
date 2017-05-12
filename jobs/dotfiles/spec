@@ -1,0 +1,13 @@
+---
+name: dotfiles
+
+templates:
+  post-start: bin/post-start
+
+packages: []
+
+properties:
+    user:
+      description: |
+        The user to install the dotfiles for
+
