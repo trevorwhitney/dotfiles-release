@@ -4,7 +4,10 @@ name: dotfiles
 templates:
   post-start: bin/post-start
 
-packages: []
+packages:
+  - gawk_4.0.1
+  - git_1.9.1
+  - dotfiles
 
 properties:
     user:

@@ -1,2 +1,6 @@
 ---
 final_name: dotfiles
+blobstore:
+  provider: local
+  options:
+    blobstore_path: /Users/twhitney/local-bosh-blobstore

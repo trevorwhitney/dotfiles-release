@@ -6,7 +6,13 @@ DOTFILES_USER=<%= p('user') %>
 RUN_DIR=/var/vcap/sys/run/dotfiles
 LOG_DIR=/var/vcap/sys/log/dotfiles
 
-mkdir -p $RUN_DIR $LOG_DIR
-chown -R $DOTFILES_USER:$DOTFILES_USER $RUN_DIR $LOG_DIR
+mkdir -p ${RUN_DIR} ${LOG_DIR}
+chown -R ${DOTFILES_USER}:${DOTFILES_USER} ${RUN_DIR} ${LOG_DIR}
+mkdir -p /home/${DOTFILES_USER}/.dotfiles
+cp -r /var/vcap/packages/dotfiles/* /home/${DOTFILES_USER}/.dotfiles
+chown -R ${DOTFILES_USER}:${DOTFILES_USER} /home/${DOTFILES_USER}/.dotfiles
 
-exec chpst -u $DOTFILES_USER:$DOTFILES_USER /var/vcap/src/bin/install.sh minimal
+chsh -s /bin/bash ${DOTFILES_USER}
+
+cd $RUN_DIR
+su -c "PATH=/var/vcap/packages/gawk_4.0.1/bin:/var/vcap/packages/git_1.9.1/bin:$PATH /home/${DOTFILES_USER}/.dotfiles/bin/install.sh minimal" -- $DOTFILES_USER

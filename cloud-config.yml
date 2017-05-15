@@ -7,17 +7,25 @@ networks:
       gateway: 10.244.0.1
 
 compilation:
-  cloud_properties:
-    name: random
+  vm_type: default
   network: private
   reuse_compilation_vms: true
-  workers: 6
+  workers: 2
 
-resource_pools:
-- name: dotfiles
+disk_types:
+- name: default
+  disk_size: 3000
+- name: large
+  disk_size: 50_000
+
+vm_types:
+- name: default
   cloud_properties:
-    name: random
-  network: private
-  stemcell:
-    name: bosh-warden-boshlite-ubuntu-trusty-go_agent
-    version: latest
+    cpu: 2
+    ram: 1024
+    disk: 3240
+- name: large
+  cloud_properties:
+    cpu: 2
+    ram: 4096
+    disk: 30_240

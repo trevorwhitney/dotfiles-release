@@ -1,0 +1,8 @@
+set -e
+
+dpkg -i git_1.9.1/liberror-perl_0.17-1.1_all.deb
+dpkg -i git_1.9.1/git-man_1.9.1-1ubuntu0.4_all.deb
+dpkg -i git_1.9.1/git_1.9.1-1ubuntu0.4_amd64.deb
+git_path=$(which git)
+mkdir -p ${BOSH_INSTALL_TARGET}/bin
+cp ${git_path} ${BOSH_INSTALL_TARGET}/bin/git

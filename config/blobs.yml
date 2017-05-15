@@ -1,1 +1,18 @@
---- {}
+gawk_4.0.1:
+  size: 364242
+  sha: 554da1584d0c70e7e15337b8f8df189f9efac2a4
+gawk_4.0.1/gawk_4.0.1+dfsg-2.1ubuntu2_amd64.deb:
+  size: 781466
+  sha: 5db5d6718941d24344f657d0a9d9911b194c9b7b
+gawk_4.0.1/gawk_4.0.1+dfsg-2.1ubuntu2_ppc64el.deb:
+  size: 364242
+  sha: 554da1584d0c70e7e15337b8f8df189f9efac2a4
+git_1.9.1/git-man_1.9.1-1ubuntu0.4_all.deb:
+  size: 699138
+  sha: fa41c7167042a3f00c6befe1de0f43367f33197a
+git_1.9.1/git_1.9.1-1ubuntu0.4_amd64.deb:
+  size: 2342678
+  sha: 08f5060ba2ab193a4975e7eb132441f185619922
+git_1.9.1/liberror-perl_0.17-1.1_all.deb:
+  size: 21062
+  sha: 0fa82466fc39398e507eec6567e5a68270b82cda

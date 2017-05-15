@@ -1,0 +1,9 @@
+---
+name: git_1.9.1
+
+dependencies: []
+
+files:
+  - git_1.9.1/liberror-perl_0.17-1.1_all.deb
+  - git_1.9.1/git-man_1.9.1-1ubuntu0.4_all.deb
+  - git_1.9.1/git_1.9.1-1ubuntu0.4_amd64.deb
