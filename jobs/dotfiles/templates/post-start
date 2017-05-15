@@ -15,4 +15,11 @@ chown -R ${DOTFILES_USER}:${DOTFILES_USER} /home/${DOTFILES_USER}/.dotfiles
 chsh -s /bin/bash ${DOTFILES_USER}
 
 cd $RUN_DIR
-su -c "PATH=/var/vcap/packages/gawk_4.0.1/bin:/var/vcap/packages/git_1.9.1/bin:$PATH /home/${DOTFILES_USER}/.dotfiles/bin/install.sh minimal" -- $DOTFILES_USER
+GAWK_PATH=/var/vcap/packages/gawk_4.0.1
+GIT_PATH=/var/vcap/packages/git_1.9.1
+VIM_PATH=/var/vcap/packages/vim_8
+cat <<BASHRC >> /home/${DOTFILES_USER}/.bashrc
+PATH=${GAWK_PATH}/bin:${GIT_PATH}/bin:${VIM_PATH}/bin:$PATH
+BASHRC
+
+su -c "PATH=${GAWK_PATH}/bin:${GIT_PATH}/bin:${VIM_PATH}/bin:$PATH /home/${DOTFILES_USER}/.dotfiles/bin/install.sh minimal" - $DOTFILES_USER

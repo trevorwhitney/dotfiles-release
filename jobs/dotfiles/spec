@@ -8,6 +8,7 @@ packages:
   - gawk_4.0.1
   - git_1.9.1
   - dotfiles
+  - vim_8
 
 properties:
     user:

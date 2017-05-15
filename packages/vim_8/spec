@@ -1,0 +1,10 @@
+---
+name: vim_8
+
+dependencies: []
+
+files:
+  - vim_8/libncurses5-dev_5.9+20140118-1ubuntu1_amd64.deb
+  - vim_8/libncursesw5-dev_5.9+20140118-1ubuntu1_amd64.deb
+  - vim_8/libtinfo-dev_5.9+20140118-1ubuntu1_amd64.deb
+  - vim_8/vim-8.0.0597.tar.gz

@@ -1,0 +1,11 @@
+set -e
+
+dpkg -i vim_8/libtinfo-dev_5.9+20140118-1ubuntu1_amd64.deb
+dpkg -i vim_8/libncurses5-dev_5.9+20140118-1ubuntu1_amd64.deb
+dpkg -i vim_8/libncursesw5-dev_5.9+20140118-1ubuntu1_amd64.deb
+tar -xzf vim_8/vim-8.0.0597.tar.gz
+
+cd vim-8.0.0597
+./configure --prefix ${BOSH_INSTALL_TARGET}
+make
+make install
