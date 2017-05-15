@@ -3,7 +3,7 @@ name: dotfiles
 
 releases:
 - name: dotfiles
-  version: latest
+  version: 2
 - name: os-conf
   version: 12
   url: https://bosh.io/d/github.com/cloudfoundry/os-conf-release?v=12
