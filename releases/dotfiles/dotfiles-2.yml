@@ -1,0 +1,30 @@
+name: dotfiles
+version: "2"
+commit_hash: "6812406"
+uncommitted_changes: false
+jobs:
+- name: dotfiles
+  version: b4be09b69d74a2b1cf046307cb5f12f9375ae195
+  fingerprint: b4be09b69d74a2b1cf046307cb5f12f9375ae195
+  sha1: 29b239308971174dfc018e5ac18f9b0292f345fa
+packages:
+- name: dotfiles
+  version: 32c18ec4166dd9062996e8b8f490bd791ae19410
+  fingerprint: 32c18ec4166dd9062996e8b8f490bd791ae19410
+  sha1: d84406d5f1e4a16dccec356ded02b7812766c346
+  dependencies: []
+- name: gawk_4.0.1
+  version: b1f4c9e07d56953a16ede2d11041eddfbe777f42
+  fingerprint: b1f4c9e07d56953a16ede2d11041eddfbe777f42
+  sha1: e68f26a2f04e38832a9756c29a1d836b8f345c87
+  dependencies: []
+- name: git_1.9.1
+  version: 3d627b2f134565ec1b8ac2f1f8dd25948c16c411
+  fingerprint: 3d627b2f134565ec1b8ac2f1f8dd25948c16c411
+  sha1: 7ae1f5cfc77cfc6cf4fdf5d1483ef88d77852fc2
+  dependencies: []
+- name: vim_8
+  version: 9211c09588e14a74a759c67f77fc6afc747ad39a
+  fingerprint: 9211c09588e14a74a759c67f77fc6afc747ad39a
+  sha1: 2b3a02b66198e39f12059268ee9d85c42fd25012
+  dependencies: []
