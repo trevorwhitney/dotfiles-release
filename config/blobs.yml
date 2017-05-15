@@ -1,51 +1,32 @@
-gawk_4.0.1:
-  size: 364242
-  sha: 554da1584d0c70e7e15337b8f8df189f9efac2a4
 gawk_4.0.1/gawk_4.0.1+dfsg-2.1ubuntu2_amd64.deb:
   size: 781466
+  object_id: f7c10a16-4307-42a1-689e-aaf27ea15fa0
   sha: 5db5d6718941d24344f657d0a9d9911b194c9b7b
-gawk_4.0.1/gawk_4.0.1+dfsg-2.1ubuntu2_ppc64el.deb:
-  size: 364242
-  sha: 554da1584d0c70e7e15337b8f8df189f9efac2a4
 git_1.9.1/git-man_1.9.1-1ubuntu0.4_all.deb:
   size: 699138
+  object_id: b9a74ef5-7b87-4f66-7cdf-2aedcfdae21e
   sha: fa41c7167042a3f00c6befe1de0f43367f33197a
 git_1.9.1/git_1.9.1-1ubuntu0.4_amd64.deb:
   size: 2342678
+  object_id: d0521fc5-88f1-4967-6db9-1a5b79dfe644
   sha: 08f5060ba2ab193a4975e7eb132441f185619922
 git_1.9.1/liberror-perl_0.17-1.1_all.deb:
   size: 21062
+  object_id: f5141937-d011-4afc-78a1-ead11404be96
   sha: 0fa82466fc39398e507eec6567e5a68270b82cda
-vim_8/libacl1_2.2.52-1_amd64.deb:
-  size: 18066
-  sha: 78b32bfdb9e41e70eb440c4d57124d712559ac1c
-vim_8/libc6_2.19-0ubuntu6.11_amd64.deb:
-  size: 4733828
-  sha: c7c4c7bb9e71f3d5b028885ac15ff3b366230b76
-vim_8/libgpm2_1.20.4-6.1_amd64.deb:
-  size: 16530
-  sha: 2afbbc39552e10c8d52fab55127f013bc7472d1c
 vim_8/libncurses5-dev_5.9+20140118-1ubuntu1_amd64.deb:
   size: 169512
+  object_id: b8202603-03fe-4d96-5946-6aad8af2ddae
   sha: 288473786fcbc1607a3d566b1a5e06b4c791d9f7
 vim_8/libncursesw5-dev_5.9+20140118-1ubuntu1_amd64.deb:
   size: 197436
+  object_id: 00ca4813-d371-407a-59f3-31e6e8f87887
   sha: 0e427e63794a7ce2d58844311c93db4a34e2d68c
-vim_8/libselinux1_2.2.2-1ubuntu0.1_amd64.deb:
-  size: 58690
-  sha: d0bfe5f18a9b8b923de3bb6e47e2c3c830956d38
 vim_8/libtinfo-dev_5.9+20140118-1ubuntu1_amd64.deb:
   size: 76308
+  object_id: a5c95ab3-c55d-4621-4e86-5678b775def9
   sha: 274a424bb5064eceab1da96fae5cb95d8879f3a7
 vim_8/vim-8.0.0597.tar.gz:
   size: 13109811
+  object_id: dd0af9d6-58ef-453b-69ea-e881aded4737
   sha: 65eea6d00e19e90466144cf31fae31e6f1191ae8
-vim_8/vim-common_2%3a8.0.0596-0york1~14.04_all.deb:
-  size: 163872
-  sha: b532bfcab3438031e0dcb92dc2613278e3aac3ad
-vim_8/vim-runtime_2%3a8.0.0596-0york1~14.04_all.deb:
-  size: 5471594
-  sha: 40f5e9fd8c4f3ea917554d1df62a06c999906ad6
-vim_8/vim_2%3a8.0.0596-0york1~14.04_amd64.deb:
-  size: 1031222
-  sha: 1559a80fd1bb6a952d942dd3c7e460a70e93d2cf

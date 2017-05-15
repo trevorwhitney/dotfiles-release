@@ -1,6 +1,8 @@
 ---
 final_name: dotfiles
 blobstore:
-  provider: local
+  provider: s3
   options:
-    blobstore_path: /Users/twhitney/local-bosh-blobstore
+    bucket_name: dotfiles-blobs
+    region: us-west-2
+    endpoint: https://s3-us-west-2.amazonaws.com
